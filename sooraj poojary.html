@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: #001be6;
+            color: #ffff0c;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 1rem;
+        }
+
+        section {
+            margin: 2rem 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0073e6;
+            margin-bottom: 1rem;
+        }
+
+        .projects, .contact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+            background: #f9f9f9;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOORAJ POOJARY</h1>
+        <p>Devops Engineer | Linux Administrator | Network Engineer </p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello! I'm a dedicated DevOps Engineer with a strong foundation in automation, infrastructure management, and continuous integration/continuous deployment (CI/CD) pipelines. I specialize in leveraging cloud technologies, containerization (Docker, Kubernetes), and configuration management tools (Ansible, Terraform). My goal is to enhance system efficiency, scalability, and reliability while ensuring seamless collaboration between development and operations teams.
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A brief description of the project. Built using HTML, CSS, and JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SOORAJ POOJARY. All rights reserved.</p>
+    </footer>
+</body>
+</html>
